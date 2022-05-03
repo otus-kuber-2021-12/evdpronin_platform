@@ -1,12 +1,84 @@
+<details><summary># Выполнено ДЗ № 9</summary>
+ - [x] Основное ДЗ
+ - [ ] Задание со *
+
+## В процессе сделано:
+ 
+## Как запустить проект:
+
+## Как проверить работоспособность:
+
+## PR checklist:
+ - [x] Выставлен label с темой домашнего задания
+</details>
 <details><summary># Выполнено ДЗ № 8</summary>
+ - [x] Основное ДЗ
+ - [ ] Задание со *
+
+## В процессе сделано:
+ 
+## Как запустить проект:
+
+## Как проверить работоспособность:
+
+## PR checklist:
+ - [x] Выставлен label с темой домашнего задания
 </details>
 <details><summary># Выполнено ДЗ № 7</summary>
+
+ - [x] Основное ДЗ
+ - [ ] Задание со *
+
+## В процессе сделано:
+ - Запущен кластер на minikube
+ - Развернуты CustomResource и CustomResourceDefinition для mysql оператора
+ - Проверена работа контроллера путём удаления mysql-instance. И обратном деплое. Данные сохранились:
+ 
+## Как запустить проект:
+ kubectl apply -f cr.yml
+## Как проверить работоспособность:
+ mysql: [Warning] Using a password on the command line interface can be insecure.
++----+-------------+
+| id | name        |
++----+-------------+
+|  1 | some data   |
+|  2 | some data-2 |
++----+-------------+
+NAME                         COMPLETIONS   DURATION   AGE
+backup-mysql-instance-job    1/1           3s         19m
+restore-mysql-instance-job   1/1           54s        18m
+
+## PR checklist:
+ - [x] Выставлен label с темой домашнего задания
 </details>
 <details><summary># Выполнено ДЗ № 6</summary>
+# Выполнено ДЗ № 6
+
+ - [x] Основное ДЗ
+ - [ ] Задание со *
+
+## В процессе сделано:
+ - Развёрнут кластер на gcloud (в последствии работа была продолжена на yandex cloud)
+ - Выполнена работа по разворачиванию cert-manager, chartmuseum с помощью helm.
+ - Развернул harbor с автовыдачей сертификата через letsencrypt
+ - Развернут microservice-demo c помощью своего helm чарта
+ - Проведена работа с kubecfg
+ - Проведена работа с Kustomize, развёрнуты микросервисы в окружении prod и test.
+
+## Как запустить проект:
+ - /kubernetes-templating/repo.sh
+ - kubectl apply -k kubernetes-templating/kustomize/overrides/<Название окружения>/
+
+## Как проверить работоспособность:
+ - https://charmuseum.51.250.69.255.nip.io
+ - https://harbor.51.250.69.255.nip.io
+ - https://shop.51.250.69.255.nip.io
+ 
+
+## PR checklist:
+ - [x] Выставлен label с темой домашнего задания
 </details>
 <details><summary># Выполнено ДЗ № 5</summary>
-</details>
-<details><summary># Выполнено ДЗ № 4</summary>
 
  - [x] Основное ДЗ
  - [x] Задание со *
@@ -31,7 +103,7 @@
 ## PR checklist:
  - [x] Выставлен label с темой домашнего задания
 </details>
-<details><summary># Выполнено ДЗ № 3</summary>
+<details><summary># Выполнено ДЗ № 4</summary>
 
  - [x] Основное ДЗ
  - [x] Задание со *
@@ -49,7 +121,7 @@
  - [x] Выставлен label с темой домашнего задания
 
 </details>
-<details><summary># Выполнено ДЗ № 2</summary>
+<details><summary># Выполнено ДЗ № 3</summary>
 
  - [x] Основное ДЗ
  - [x] Задание со *
@@ -80,7 +152,7 @@
 ## PR checklist:
  - [x] Выставлен label с темой домашнего задания
 </details>
-<details><summary># Выполнено ДЗ № 1</summary>
+<details><summary># Выполнено ДЗ № 2</summary>
  - [x] Основное ДЗ
  - [x] Задание со *
 
@@ -115,4 +187,6 @@
 
 ## PR checklist:
  - [x] Выставлен label с темой домашнего задания</details>
-
+<details><summary># Выполнено ДЗ № 1</summary>
+Выполнены работы по настройке git и отправке файлов в репозиторий. Дождался автопроверки после pull request.
+</details>
