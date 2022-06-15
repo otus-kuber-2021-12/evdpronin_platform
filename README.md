@@ -16,11 +16,16 @@
  - [ ] Задание со *
 
 ## В процессе сделано:
- 
+ 1. Равернут, с помощью helm prometheus, grafana, node-exporter.
+ 2. Применены манифесты для развёртывания nginx (3 реплики).
+ 3. Проверена с помощью  kubectl port-forward работа prometheus на порту 9090:9090, grafana на порту 8000:80 и nginx по адресу 127.0.0.1:8080/basic_status (8080:8080).
 ## Как запустить проект:
-
+ kubectl create ns monitoring
+ helm install prometheus-stack prometheus-community/kube-prometheus-stack -n monitoring
+ kubectl apply -f '*.yaml'
 ## Как проверить работоспособность:
-
+ kubectl get all -n monitoring 
+ kubectl get all ##nginx развёрнут в default
 ## PR checklist:
  - [x] Выставлен label с темой домашнего задания
 </details>
