@@ -5,11 +5,11 @@ metadata:
 spec:
   storageClassName: csi-hostpath-sc
   dataSource:
-    name: snapshot
+    name: csi-snapshot
     kind: VolumeSnapshot
     apiGroup: snapshot.storage.k8s.io
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 2Gi
+      storage: 1Gi

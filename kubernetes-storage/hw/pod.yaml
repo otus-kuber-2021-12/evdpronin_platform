@@ -8,8 +8,8 @@ spec:
       image: nginx
       volumeMounts:
       - mountPath: "/data"
-        name: my-volume
+        name: csi-volume
   volumes:
-    - name: my-volume
+    - name: csi-volume
       persistentVolumeClaim:
         claimName: storage-pvc
